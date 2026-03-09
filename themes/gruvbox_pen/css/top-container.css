@@ -1,0 +1,51 @@
+#top-container {
+  position: absolute;
+  top: 1.2em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#time-date {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  text-shadow: 2px 2px 5px #0C0C0C;
+}
+#time-date span {
+  display: block;
+}
+#time-label {
+  font-size: 4em;
+}
+
+#additions-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2em;
+}
+
+.addition-label {
+  background: #3c38360C;
+  padding: 0.4em;
+  transition: background var(--animation-duration);
+  border-radius: 5px;
+  cursor: default;
+  font-weight: bold;
+}
+
+.addition-label:hover,
+.addition-label:focus-within {
+  background: #3c38360C;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
